@@ -3,8 +3,8 @@
 
 <head>
     <title>Calculadora</title>
+    <meta charset="utf-8">
     <style typw="text/case">
-        /* ******************************************* CSS ******************************************** */
         body {
             position: absolute;
             width: 370px;
@@ -39,8 +39,6 @@
             border-radius: 12px;
             padding: 20px;
         }
-
-        /* *************************************************************************************************************** */
     </style>
     <script type="text/javascript">
         var numDisplay = "";
@@ -88,7 +86,7 @@
                 limparTela();
                 exibirTela(resultado);
                 limparMemoria();
-                numero = manterNumero;
+                numero = manterNumero.toString();
             }
         }
 
@@ -122,11 +120,11 @@
     <div id="calculadora">
         <textarea id="display" disabled rows="1"></textarea>
         <div>
-            <button id="limpatela" onclick="LimparTudo()" style= "width: 166px; 
+            <button id="limpatela" onclick="LimparTudo()" style="width: 166px; 
             background-color:salmon;">AC</button>
             <button onclick="pressionaOperador(this)">/</button>
             <button onclick="pressionaOperador(this)">*</button>
-            
+
 
         </div>
 
